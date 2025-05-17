@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Inter;
+
+    overflow-y: hidden;
+    
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_container{
+    width: 1200px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #466BFF;
+}
+.login, .register{
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+    
+}
+.login h1{
+    color: #466BFF;
+}
+.form_container label{
+    font-size: 20px;
+}
+.form-input{
+    border: 3px solid #466BFF;
+    height: 35px;
+    font-size: 18px;
+
+    outline: #0c194b;
+}
+.form-btn{
+    background-color: #466BFF;
+    padding: 10px 40px;
+    width: min-content;
+    justify-self: end;
+    color: #fff;
+}
+.back-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-img img{
+    width: 70%;
+}
+
+
+.chat_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.chat-list_container{
+    width: 400px;
+    height: 100vh;
+    background-color: #466BFF;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat_search{
+    margin: 10px 0px 30px 0px;
+}
+.chat_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.chat-list_item{
+    width: 300px;
+    height: 80px;
+
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    padding: 0px 10px;
+
+    background-color: #E8E8E8;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.chat_container{
+    width: 100%;
+    height: 100vh;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-msg_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.msg_from{
+    width: 50%;
+    border-radius: 50px;
+    padding: 30px;
+}
+.msg_from_me{
+    align-self: flex-end;
+    background-color: #466BFF;
+    color: #fff;
+}
+.msg_from_friend{
+    align-self: flex-start;
+    background-color: #E8E8E8;
+}

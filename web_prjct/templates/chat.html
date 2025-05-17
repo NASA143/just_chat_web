@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="static/style/style.css">
+</head>
+<body>
+    <div class="wrapper chat_wrapper">
+        <div class="chat-list_container">
+            <div class="chat_search">
+                <input type="text">
+                <button>поиск</button>
+            </div>
+            <div class="chat_list">
+                <form method="POST" action="/chats">
+                {% for item in chat_list%}
+                <button type="submit" content="12" name="action" value="press" class="chat-list_item">
+                    <img src="../static/ava.png" alt="">
+                    <p>{{item}}</p>
+                </button>
+                    {% endfor%}
+                </form>
+
+            </div>
+        </div>
+        <div class="chat_container">
+            <div class="chat_title">
+                <img src="" alt="">
+            </div>
+
+            <div class="chat-msg_container">
+                {% for item in msgs%}
+                {%if item.id_user_from == user_id%}
+                <div class="msg_from msg_from_me">{{item.msg}}</div>
+                {%else%}
+                <div class="msg_from msg_from_friend">{{item.msg}}</div>
+                {%endif%}
+                {% endfor%}
+
+            </div>
+            <div class="chat-input_container">
+                <input type="text" class="chat-input">
+                <button>Отпр</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

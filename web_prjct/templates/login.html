@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/style/style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" method="post" class="form_container">
+            {{ form.hidden_tag() }}
+            <div class="login">
+                <h1>Вход</h1>
+                <label for="login-input-login">Логин</label>
+                {{ form.login(class="form-input", id="login-input-login", type="text") }}
+
+                <label for="login-input-password">Пароль</label>
+                {{ form.password(class="form-input", id="login-input-password", type="text") }}
+
+                {{ form.submit(type="submit", class="form-btn") }}
+
+            </div>
+
+
+        </form>
+        <div class="back-img">
+            <img src="../static/Group 17.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
